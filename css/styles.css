@@ -108,10 +108,19 @@ p {
 
 /* header */
 .main-nav {
-    background-color: var(--third-color);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+    background-color: var(--third-color);    
+    border-bottom: 1px solid #ECECEC;
+}
+
+.main-nav .container {
     display: flex;
     align-items: baseline;
-    border-bottom: 1px solid #ECECEC;
 }
 
 .main-nav .logo {
@@ -196,6 +205,7 @@ p {
 
 /* section Hero */
 .hero{
+    margin-top: 80px;
     height: 600px;
     max-width: 1600px;
     margin-right: auto;
@@ -444,6 +454,7 @@ p {
 .sort-btn {
     display: flex;
     justify-content: center;
+    margin-top: 80px;
     margin-bottom: 50px;
 }
 
